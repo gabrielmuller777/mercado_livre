@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'qrscan.dart';
+import 'package:pdf_flutter/pdf_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,7 +28,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,11 +46,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => QrScan()));
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => QrScan()));
         },
         tooltip: 'Scan',
         child: Icon(Icons.camera),
-      ), 
+      ),
     );
   }
 }
