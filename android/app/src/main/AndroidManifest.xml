@@ -2,7 +2,7 @@
     package="com.example.mercado_livre">
    <application
         android:label="mercado_livre"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
